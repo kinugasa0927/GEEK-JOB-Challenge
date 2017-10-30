@@ -1,0 +1,32 @@
+
+ Javaフレームワーク　3種の特徴
+
+
+　〇 Structs　（現在のバージョンはStructs2）
+
+　　・MVC(Model View Controller)モデルを採用。
+　
+　　・独自のカスタムタグの利用や、Actionクラスとstruts-config.xmlでの画面遷移の管理、バリデータ（入力チェック）機能の提供。
+
+    ・脆弱性の発見などによって別のフレームワークに移行するユーザーも増えている。
+
+
+　〇 JSF(Java Server Faces)
+　　
+　　・同じくMVC(Model View Controller)モデルを採用。
+
+　　・表示する画面に対応するサーバーサイドのクラス（バッキングBean）によって処理が行われる「コンポーネントベースフレームワーク」
+
+　　・MVCモデルのView（表示）にはJSPで実装されるケースが多いが、JSFは「XHTML」というXML形式のHTMLで実装される。
+　　　
+　　　JSPはサーブレットの処理なしでは正しく表示されないが、XHTMLの場合はブラウザでそのまま表示されるので、
+　　　
+　　　デザインの確認がしやすいフレームワークという特徴も持っている。
+
+　〇　Play Framework
+
+　　・Webアプリケーションフレームワーク。
+
+　　・Play FrameworkはRubyのフレームワークである「Ruby on Rails」、pythonのフレームワークである「Django」に大きく影響を受けた
+　　　
+　　　フレームワークで、軽量さと高い生産性が特徴。
