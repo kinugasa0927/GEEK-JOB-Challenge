@@ -1,0 +1,32 @@
+MariaDB [challenge_db]> DELETE FROM profiles;
+Query OK, 8 rows affected (0.01 sec)
+
+MariaDB [challenge_db]> INSERT INTO profiles VALUES(1,'ìcíÜé¿',012-345-6789,30,'1994-02-01');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [challenge_db]> INSERT INTO profiles VALUES(2,'óÈñÿñŒ','090-1122-3344',37,'1987-08-12');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [challenge_db]> INSERT INTO profiles VALUES(3,'óÈñÿé¿','080-5566-7788',24,'2000-12-24');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [challenge_db]> INSERT INTO profiles VALUES(4,'ç≤ì°ê¥','012-0987-6543',19,'2005-08-01');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [challenge_db]> INSERT INTO profiles VALUES(5,'çÇã¥ê¥','090-9900-1234',24,'2000-12-24');
+Query OK, 1 row affected (0.01 sec)
+
+
+MariaDB [challenge_db]> INSERT INTO profiles VALUES(1,'ìcíÜé¿','012-345-6789',30,'1994-02-01');
+
+MariaDB [challenge_db]> SELECT profileID,name,tel,age,birthday from profiles;
++-----------+--------+---------------+------+------------+
+| profileID | name   | tel           | age  | birthday   |
++-----------+--------+---------------+------+------------+
+|         2 | óÈñÿñŒ | 090-1122-3344 |   37 | 1987-08-12 |
+|         3 | óÈñÿé¿ | 080-5566-7788 |   24 | 2000-12-24 |
+|         4 | ç≤ì°ê¥ | 012-0987-6543 |   19 | 2005-08-01 |
+|         5 | çÇã¥ê¥ | 090-9900-1234 |   24 | 2000-12-24 |
+|         1 | ìcíÜé¿ | 012-345-6789  |   30 | 1994-02-01 |
++-----------+--------+---------------+------+------------+
+5 rows in set (0.00 sec)
